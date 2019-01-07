@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    
+}
+
+body {
+    font-family: 'MONTSERRAT', Tahoma, Verdana, sans-serif;
+    background-color: #ffead0;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: 1px solid #5882FA;
+    border-radius: 4px;
+    color: #5882FA;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    float: right;
+}
+
+button:hover {
+    background-color: #5882FA;
+    color: #fff;
+}
+
+.lds-dual-ring {
+    position: absolute;
+    left: 50%; 
+    bottom: 50%;
+    width: 64px;
+    height: 64px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #5882FA;
+    border-color: #5882FA transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
